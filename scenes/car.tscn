@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsisqih3hly3h"]
+
+[ext_resource type="Script" path="res://scenes/car.gd" id="1_e5qgv"]
+[ext_resource type="PackedScene" uid="uid://db4gi3m4yaxxc" path="res://assets/car.glb" id="2_hcom0"]
+[ext_resource type="PackedScene" uid="uid://de2vsl63vh5sm" path="res://assets/tire.glb" id="3_1w0f0"]
+
+[node name="car" type="VehicleBody3D"]
+script = ExtResource("1_e5qgv")
+
+[node name="car" parent="." instance=ExtResource("2_hcom0")]
+transform = Transform3D(0.698504, 0, 0, 0, 0.698504, 0, 0, 0, 0.698504, -0.000211254, 1.23474, 0.242709)
+
+[node name="tire" parent="car" instance=ExtResource("3_1w0f0")]
+transform = Transform3D(0.906577, 0, 0, 0, 0.906577, 0, 0, 0, 0.906577, 1.65225, -0.783092, 2.58178)
+
+[node name="tire2" parent="car" instance=ExtResource("3_1w0f0")]
+transform = Transform3D(0.906577, 0, 0, 0, 0.906577, 0, 0, 0, 0.906577, 1.65225, -0.783092, -3.96691)
+
+[node name="tire3" parent="car" instance=ExtResource("3_1w0f0")]
+transform = Transform3D(0.906577, 0, 0, 0, 0.906577, 0, 0, 0, 0.906577, -1.65104, -0.783092, 2.58178)
+
+[node name="tire4" parent="car" instance=ExtResource("3_1w0f0")]
+transform = Transform3D(0.906577, 0, 0, 0, 0.906577, 0, 0, 0, 0.906577, -1.65104, -0.783092, -3.96691)
