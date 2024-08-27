@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4jrn8n4dx5mk"]
+
+[ext_resource type="PackedScene" uid="uid://d0t7bl45fdplg" path="res://scenes/assets/track1.tscn" id="1_5wq3m"]
+[ext_resource type="Script" path="res://scenes/movecam.gd" id="2_blek3"]
+
+[node name="track1scene" type="Node3D"]
+
+[node name="track" parent="." instance=ExtResource("1_5wq3m")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 1.91069e-15, 0, 118.261, 0)
+script = ExtResource("2_blek3")
+
+[node name="light" type="Node" parent="."]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="light"]
+transform = Transform3D(0.260707, -0.88948, 0.37531, 2.68046e-08, 0.388754, 0.921342, -0.965418, -0.2402, 0.101351, 0, 10, 0)
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="light"]
+transform = Transform3D(-0.898312, 0.404799, -0.170802, 3.82387e-08, 0.388754, 0.921342, 0.439359, 0.827652, -0.349222, 0, 10, 0)
