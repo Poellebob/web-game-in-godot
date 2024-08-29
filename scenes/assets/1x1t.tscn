@@ -1,7 +1,5 @@
-[gd_scene load_steps=2 format=3 uid="uid://udxwxkw5xnnc"]
+[gd_scene load_steps=2 format=3 uid="uid://7gcp3l32as75"]
 
-[ext_resource type="PackedScene" uid="uid://c0718o47pqxl3" path="res://assets/1x1t.glb" id="1_l37td"]
+[ext_resource type="PackedScene" uid="uid://bm5d2ikfws8jx" path="res://assets/1x1t.glb" id="1_qqdxi"]
 
-[node name="1x1t" type="Node3D"]
-
-[node name="1x1t2" parent="." instance=ExtResource("1_l37td")]
+[node name="1x1t" instance=ExtResource("1_qqdxi")]

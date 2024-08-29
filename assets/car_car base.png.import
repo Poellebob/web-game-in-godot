@@ -2,14 +2,14 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cg6mwepwkp83y"
+uid="uid://ch7fsipl7memx"
 path.s3tc="res://.godot/imported/car_car base.png-891671c127b36c6aa61e7306cb3e5561.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "408caf76f74d00181359795f0137dd38"
+"md5": "e8a8b016230375288d475f7e5dc37adc"
 }
 
 [deps]

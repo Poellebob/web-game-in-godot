@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://2n7xga6ldsjc"]
+
+[ext_resource type="PackedScene" uid="uid://dfsr43kqvwv2f" path="res://scenes/assets/1x1s.tscn" id="1_ils38"]
+[ext_resource type="PackedScene" uid="uid://cktehpswun2qp" path="res://scenes/assets/car.tscn" id="2_grap8"]
+[ext_resource type="PackedScene" uid="uid://ok36b8sh3dhq" path="res://scenes/assets/1x1+.tscn" id="3_3culc"]
+
+[node name="test" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.942338, -0.280369, 0.182735, 3.29331e-09, 0.546029, 0.837766, -0.334662, -0.789459, 0.514544, 0, 8.19734, 0)
+
+[node name="car" parent="." instance=ExtResource("2_grap8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -1)
+
+[node name="Camera3D" type="Camera3D" parent="car"]
+transform = Transform3D(1, 0, 0, 0, 0.934192, 0.356771, 0, -0.356771, 0.934192, 0, 9.79034, 13.6695)
+
+[node name="1x1s" parent="." instance=ExtResource("1_ils38")]
+
+[node name="1x1s2" parent="." instance=ExtResource("1_ils38")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
+
+[node name="1x1+" parent="." instance=ExtResource("3_3culc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20)
+
+[node name="1x1s3" parent="." instance=ExtResource("1_ils38")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -10, 0, -20)

@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://db4gi3m4yaxxc"
+uid="uid://clqk2dhtg7r7n"
 path="res://.godot/imported/car.glb-ac4dc2ad7488d74db36239a0c4c78023.scn"
 
 [deps]
@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/car.glb-ac4dc2ad7488d74db36239a0c4c78023.scn"
 
 [params]
 
-nodes/root_type=""
+nodes/root_type="VehicleBody3D"
 nodes/root_name=""
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
