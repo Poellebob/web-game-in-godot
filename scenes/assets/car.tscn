@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://cktehpswun2qp"]
+[gd_scene load_steps=7 format=3 uid="uid://cktehpswun2qp"]
 
 [ext_resource type="PackedScene" uid="uid://clqk2dhtg7r7n" path="res://assets/car.glb" id="1_ydsqm"]
 [ext_resource type="Script" path="res://scripts/car.gd" id="2_cn7qf"]
 [ext_resource type="PackedScene" uid="uid://cqyc2fi6p3a36" path="res://assets/wheel.glb" id="2_fk6a2"]
-[ext_resource type="Script" path="res://scripts/camera_controller.gd" id="4_vs0pb"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_v5quy"]
 friction = 0.83
@@ -51,7 +50,8 @@ use_as_traction = true
 wheel_radius = 0.675
 suspension_travel = 0.1
 suspension_stiffness = 200.0
-damping_compression = 0.1
+damping_compression = 10.0
+damping_relaxation = 0.4
 
 [node name="wheel" parent="VehicleWheel3D" index="0" instance=ExtResource("2_fk6a2")]
 transform = Transform3D(1, 0, 1.02554e-14, 0, 1, 0, -1.02554e-14, 0, 1, 0, 0, 0)
@@ -62,7 +62,8 @@ use_as_traction = true
 wheel_radius = 0.675
 suspension_travel = 0.1
 suspension_stiffness = 200.0
-damping_compression = 0.1
+damping_compression = 10.0
+damping_relaxation = 0.4
 
 [node name="wheel" parent="VehicleWheel3D3" index="0" instance=ExtResource("2_fk6a2")]
 
@@ -72,7 +73,8 @@ use_as_steering = true
 wheel_radius = 0.675
 suspension_travel = 0.1
 suspension_stiffness = 200.0
-damping_compression = 0.1
+damping_compression = 10.0
+damping_relaxation = 0.4
 
 [node name="wheel" parent="VehicleWheel3D2" index="0" instance=ExtResource("2_fk6a2")]
 
@@ -82,13 +84,12 @@ use_as_steering = true
 wheel_radius = 0.675
 suspension_travel = 0.1
 suspension_stiffness = 200.0
-damping_compression = 0.1
+damping_compression = 10.0
+damping_relaxation = 0.4
 
 [node name="wheel" parent="VehicleWheel3D4" index="0" instance=ExtResource("2_fk6a2")]
 
 [node name="Camera Controller" type="Node3D" parent="." index="10"]
-top_level = true
-script = ExtResource("4_vs0pb")
 
 [node name="Camera3D" type="Camera3D" parent="Camera Controller" index="0"]
 transform = Transform3D(1, 0, 0, 0, 0.956473, 0.291821, 0, -0.291821, 0.956473, 0, 7.94407, 11.0534)

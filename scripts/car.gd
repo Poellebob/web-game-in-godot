@@ -8,6 +8,8 @@ var Camera_Controller: Node3D
 func _ready():
 	Camera_Controller = $"Camera Controller"
 
+	Camera_Controller.top_level = true
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	Camera_Controller.position = lerp(Camera_Controller.position, position, 0.1)
